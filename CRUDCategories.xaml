@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="UDCategories" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1736,6028" sap2010:WorkflowViewState.IdRef="UDCategories_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="UDCategories" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1736,10412" sap2010:WorkflowViewState.IdRef="UDCategories_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="39">
       <x:String>System.Activities</x:String>
@@ -100,7 +100,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Update&amp;Delete" sap:VirtualizedContainerService.HintSize="1746,5963" sap2010:WorkflowViewState.IdRef="Sequence_17">
+  <Sequence DisplayName="Update&amp;Delete" sap:VirtualizedContainerService.HintSize="1746,10347" sap2010:WorkflowViewState.IdRef="Sequence_17">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtCategory" />
       <Variable x:TypeArguments="x:String" Name="CategoryDescription" />
@@ -111,37 +111,37 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="AddCategories" sap:VirtualizedContainerService.HintSize="1684,5841" sap2010:WorkflowViewState.IdRef="Sequence_40">
+    <Sequence DisplayName="AddCategories" sap:VirtualizedContainerService.HintSize="1684,10225" sap2010:WorkflowViewState.IdRef="Sequence_40">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="1622,802" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
+      <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="1622,796" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
         <ueab:ExcelProcessScopeX.Body>
           <ActivityAction x:TypeArguments="ui:IExcelProcess">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="602,706" sap2010:WorkflowViewState.IdRef="Sequence_23">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="602,700" sap2010:WorkflowViewState.IdRef="Sequence_23">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="540,584" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_6" ResizeWindow="None" WorkbookPath="C:\Users\user-pc\Desktop\Connected Office Test Data.xlsx">
+              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="540,578" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_6" ResizeWindow="None" WorkbookPath="Connected Office Test Data.xlsx">
                 <ueab:ExcelApplicationCard.Body>
                   <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="506,302" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="506,300" sap2010:WorkflowViewState.IdRef="Sequence_22">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,180" sap2010:WorkflowViewState.IdRef="ReadRangeX_2" Range="[Excel.Sheet(&quot;Category&quot;)]" SaveTo="[dtCategory]" />
+                      <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,178" sap2010:WorkflowViewState.IdRef="ReadRangeX_2" Range="[Excel.Sheet(&quot;Category&quot;)]" SaveTo="[dtCategory]" />
                     </Sequence>
                   </ActivityAction>
                 </ueab:ExcelApplicationCard.Body>
@@ -156,19 +156,19 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ueab:ExcelProcessScopeX>
-      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtCategory]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1622,4877" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtCategory]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1622,9267" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
         <ui:ForEachRow.Body>
           <ActivityAction x:TypeArguments="sd:DataRow">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Category" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Create and read" sap:VirtualizedContainerService.HintSize="1588,4751" sap2010:WorkflowViewState.IdRef="Sequence_39">
+            <Sequence DisplayName="Create and read" sap:VirtualizedContainerService.HintSize="1588,9142" sap2010:WorkflowViewState.IdRef="Sequence_39">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1526,92" sap2010:WorkflowViewState.IdRef="Sequence_24">
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1526,90" sap2010:WorkflowViewState.IdRef="Sequence_24">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -186,30 +186,30 @@
                   </ui:GetRowItem.Value>
                 </ui:GetRowItem>
               </Sequence>
-              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Home Page - Connected Office: Device Management" sap:VirtualizedContainerService.HintSize="1526,1468" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="e90041a9-48dc-49d2-8423-f4aa2408cdb6" Version="V2">
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Home Page - Connected Office: Device Management" sap:VirtualizedContainerService.HintSize="1526,1462" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="e90041a9-48dc-49d2-8423-f4aa2408cdb6" Version="V2">
                 <uix:NApplicationCard.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,1241" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,1236" sap2010:WorkflowViewState.IdRef="Sequence_25">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NClick ClickType="Single" DisplayName="Click 'Categories'" sap:VirtualizedContainerService.HintSize="338,167" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e90041a9-48dc-49d2-8423-f4aa2408cdb6" Version="V3">
+                      <uix:NClick ClickType="Single" DisplayName="Click 'Categories'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e90041a9-48dc-49d2-8423-f4aa2408cdb6" Version="V3">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/" DesignTimeRectangle="10, 377, 292, 40" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Categories'" FullSelectorArgument="&lt;webctrl aaname='Categories' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Categories' tag='A' type='' class='nav-link text-dark' check:innerText='Categories' /&gt;" Guid="532fd6b2-b490-4095-ac4b-95128fd87ca7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAASgAAAAsCAYAAADW4SW7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAL2SURBVHhe7dg/TuNAGIbxHGqrrbgMEhV3SEvBCehpOAAHQErHAZDYO+xewOuJ/Y6/+WcnkaN8Ic8n/QqwHZxiHs2w6frZbDbdn39/AcAFDYEC4I6GQAFwR0OgALijIVAA3NEQKADuaAgUAHc0BAqAOxoCBcAdDYEC4I6GQAFwR0OgALijIVAA3NEQKADuaAgUAHc0BAqAOxoCdardU/fr913vqXuvXQdwMs15AvX92t3vF29qu6vce6Xen/W9HrqX7/o9AE6jWT1Q08ItHROoz7eH4bnnj+r1i2MHBZyNZtVAxagEj6/dp73eL+jDA/XVvTyOn+M1UADORrNioD66bStOmdou6/7ta7jeOB7G65Xn7bXaZ2x307ul95p3liSI9rmPGM0Q2inG6Q4qiXSQBba4zhERKGjWC1Q88iwd5czuKLOPx2ygFp4Nn994XuJ95n0LMbCVgPVagWoeb8dIlXEKCBSQ06wWKLv4jvlfUxAXdgxD44gXo2IWtX43PjtFYgqHfbcidHa3V0TWBqq1Uxp/b8IYv3/83XBP+T0B1GgusINq7SR6C4FqPrcXItAIW3JUC4HKf16+r31UGwM1tyNTUIt72D0BNZr1AmWPVtliTthFOt536A6qeYTaC4u9FZQsPOZdDw1Uel8ZqPl41nZVk/yzgVunWfGf5CYqQWXHERZpXMjxeu24tbSDau087DuMO5uejccQg9rf7M0c8ZYCdcwOclD/jgDOEqjA7GAqkkDVmFjku6V8R5OLUZg9apnQzN0X3+OIQCVxTOnZ1g7wsKABt0OzcqAG9QhNOxq7UMPiLY94QRqjKRD1ENhFnv798HcboVk8bh0TqEEtQnq2do04ASXNWQLlztHHLwCXpPl5gep3RdvGLijf7QDwSfMjA5Uf24TdE3AdNDcSKHZOwDXR3Mb/oABcFQ2BAuCOhkABcEdDoAC4oyFQANzRECgA7mgIFAB3NAQKgDsaAgXAHQ2BAuCOhkABcEdDoAC4M0zX/QeNnkCk+Y8xtwAAAABJRU5ErkJggg==" InformativeScreenshot="358668f1442b53a26dbc46e868640d05.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home Page - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
                         </uix:NClick.Target>
                       </uix:NClick>
-                      <uix:NClick ClickType="Single" DisplayName="Click 'IMG'" sap:VirtualizedContainerService.HintSize="338,167" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e90041a9-48dc-49d2-8423-f4aa2408cdb6" Version="V3">
+                      <uix:NClick ClickType="Single" DisplayName="Click 'IMG'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e90041a9-48dc-49d2-8423-f4aa2408cdb6" Version="V3">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Categories" DesignTimeRectangle="536, 244, 30, 30" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl aaname='              ' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='              ' tag='IMG' type='' class='' /&gt;" Guid="77f74d1a-66a6-416b-9b80-81ddd54e48a8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASNSURBVFhH1ZdZK65RFMfNQ8g8ZUjJFO6lyCdQXLhAocwyluFLcIkyc6V8CBeilJAyJKSMSYkb8zr91nme1/O+3uE56tQ5/9r1tvd+1v7vtf5r7fX6yT+C/4/I+/u73NzcyMrKirS2tkpxcbFERUVJQECAjsjISCksLJTm5mZZXl6W6+tr/cYufBJ5eXmRw8NDGRkZkdTUVPHz89ODg4KCJCQkRMLCwnTwmznW2JOSkiKDg4NycHCgNnzBI5HPz0+5v7+XhYUFycrKEn9/fz0wOTlZSkpK1Cujo6OytLSkY2xsTNrb26W0tFRJsJdvMjMzZWZmRu7u7tSmJ7gl8vHxIefn59Lb26s35LbZ2dnS3d0tW1tbXg2ytrOzI319fZKTk6PfYqOzs1POzs7Utjt8I4IhSLS1temNoqOjpbKyUlZXV40d9rG2tiZVVVUSExOjtpqamuT09NTtRb4RIRx4gg8TEhKkp6dHHh4ejNU/x+PjowwMDEhiYqLaJHyEyRVORBAVmsCVeAISz8/PxurPgV3I4BlsT01NfROwExGyA2ESV8LhyxOk59XVlY63tzdj1j3wTHV1tdrOyMiQ/f19Y+U3HEQwSoriPoRpRxPHx8cyPDysaXp0dGTMesb6+rrk5ubqGXjbWmccRChW1AnSjuywg9nZWY09WiJF7QDSnMF3l5eXxqyFCBWTQkSdIEXtgMPj4+MlNjZW424Hu7u7Wmc4a3Fx0Zi1EKFAISSKlbc6YcVPiGC7vLxcz6qvrzdmLUR4OyjRELKLnxAB/f39EhwcLAUFBcaMhQgPGIqmbLsCUSHMubk5PdwcjY2NEhERoYPf1jX2ImB32TQxMSGhoaH6UJpwEMFViIh3wxWkJ9lhCtMcGCIDGJCxrrGX2mEVpAn0yFmBgYHGzB8QQe0cEBcX5xgcbiViXWMvFfri4sKw8gWTCGeasBUa3Iubcfn09LRjWEPT0NDgtMZeitbr66th5QuTk5MaGr4z4SBSVFSkYuWxswsO+4lYCRlizc/PN2YsRFpaWtRV9BN/O30rKir0rNraWmPWQoT2zuystre3jVnv+AmRvb09R6c3Pz9vzFqI0GOanRV5bgdmiYcMpOyA9yw8PFzFbBWygwi1gswgA+isaGp8AQETb7LD9TV1h83NTdUFYenq6nL/6AEaXXpMsofOiqfbG8gm6gQ3c5cdVjw9PUlNTY1mS3p6uobIqkUnIjQruBjGNDHc1k4H7gvYGBoaUi1hm8rq2nA5EQG0cTS6hMisjr484w14AhK86tjkf8/t7a2x+oVvRHAX3TaNLh/iGTqrjY0NY4d9oAnCgSewVVdXJycnJ247+W9EABvptjs6OtSVaIbOCjHTT3irM6wRf7IDYaIJbOAJTySAWyIAg4SJ+oCAuRGpTYqXlZVpihNr3g0GZZswUqyoE6QoBNLS0mR8fFzD4YkE8EjEBEIjNUnRpKQkLUQcQInmtpBj8Js51thDnUBreMfOPwGfREyQ86QqrzOdFU0NbQBPOYfzgOXl5WnZpmKS0nzjLYxW2Cbyt/GPEBH5BdBg56QgKg34AAAAAElFTkSuQmCC" InformativeScreenshot="5f6dd82ae9512428b987209fb74187ae.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Categories - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
                         </uix:NClick.Target>
                       </uix:NClick>
-                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Category Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,228" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="e90041a9-48dc-49d2-8423-f4aa2408cdb6" Text="[CategoryName]" Version="V3">
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Category Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,227" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="e90041a9-48dc-49d2-8423-f4aa2408cdb6" Text="[CategoryName]" Version="V3">
                         <uix:NTypeInto.Target>
                           <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Categories/Create" DesignTimeRectangle="332, 344, 506, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT CategoryName'" FullSelectorArgument="&lt;webctrl id='CategoryName' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='CategoryName' tag='INPUT' type='text' class='form-control' aaname='Category Name' /&gt;" Guid="74a4b807-9136-4986-a8d6-ba2679f43040" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAf4AAAAqCAYAAABStzmoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFkSURBVHhe7dmxasJQAIXhvv/DlQ51qeDg4CKCi7pEbjnFBIW+gDnfB2fQ3P2/IR8DAKgh/ABQ5CX8l+tt7PaH8bXZjs/vHzMzM3vTpeVpetr+bAl/HuTQ8XQe03R//AsAvKO0PE1P25/jv4Q/t4IcAADWI21P42dL+HMj8KYPAOuStqfxsyX8+R4AAKzPc+OFHwBWTvgBoIjwA0AR4QeAIsIPAEWEHwCKCD8AFBF+ACgi/ABQRPgBoIjwA0AR4QeAIsIPAEWEHwCKCD8AFBF+ACgi/ABQRPgBoIjwA0AR4QeAIsIPAEWEHwCKCD8AFBF+ACgi/ABQRPgBoIjwA0AR4QeAIsIPAEX+Df/XZjum6f74BQCsQdqexs+W8O/2h3E8nR+/AIA1SNvT+NkS/sv19ncjyAFv/gDw3tLyND1tT+NnS/gjD3IryKF8DzAzM7P3XFqepj9HP17CDwCsm/ADQI0xfgEE1FVC72Q/VQAAAABJRU5ErkJggg==" InformativeScreenshot="6df195c838821670a883e8ab435b16b2.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create Category - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
                             <uix:TargetAnchorable.Anchors>
@@ -220,7 +220,7 @@
                           </uix:TargetAnchorable>
                         </uix:NTypeInto.Target>
                       </uix:NTypeInto>
-                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Category Description'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,228" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="e90041a9-48dc-49d2-8423-f4aa2408cdb6" Text="[CategoryDescription]" Version="V3">
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Category Description'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,227" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="e90041a9-48dc-49d2-8423-f4aa2408cdb6" Text="[CategoryDescription]" Version="V3">
                         <uix:NTypeInto.Target>
                           <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Categories/Create" DesignTimeRectangle="332, 430, 506, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT CategoryDescripti…'" FullSelectorArgument="&lt;webctrl id='CategoryDescription' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='CategoryDescription' tag='INPUT' type='text' class='form-control' aaname='Category Description' /&gt;" Guid="481581ef-f5ff-41ab-a42d-59a20a4ef5b0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAf4AAAAqCAYAAABStzmoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFkSURBVHhe7dmxasJQAIXhvv/DlQ51qeDg4CKCi7pEbjnFBIW+gDnfB2fQ3P2/IR8DAKgh/ABQ5CX8l+tt7PaH8bXZjs/vHzMzM3vTpeVpetr+bAl/HuTQ8XQe03R//AsAvKO0PE1P25/jv4Q/t4IcAADWI21P42dL+HMj8KYPAOuStqfxsyX8+R4AAKzPc+OFHwBWTvgBoIjwA0AR4QeAIsIPAEWEHwCKCD8AFBF+ACgi/ABQRPgBoIjwA0AR4QeAIsIPAEWEHwCKCD8AFBF+ACgi/ABQRPgBoIjwA0AR4QeAIsIPAEWEHwCKCD8AFBF+ACgi/ABQRPgBoIjwA0AR4QeAIsIPAEX+Df/XZjum6f74BQCsQdqexs+W8O/2h3E8nR+/AIA1SNvT+NkS/sv19ncjyAFv/gDw3tLyND1tT+NnS/gjD3IryKF8DzAzM7P3XFqepj9HP17CDwCsm/ADQI0xfgEE1FVC72Q/VQAAAABJRU5ErkJggg==" InformativeScreenshot="c7d5a676fd4528c24413fc8e674557ac.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create Category - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
                             <uix:TargetAnchorable.Anchors>
@@ -231,7 +231,7 @@
                           </uix:TargetAnchorable>
                         </uix:NTypeInto.Target>
                       </uix:NTypeInto>
-                      <uix:NClick ClickType="Single" DisplayName="Click 'Create'" sap:VirtualizedContainerService.HintSize="338,167" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e90041a9-48dc-49d2-8423-f4aa2408cdb6" Version="V3">
+                      <uix:NClick ClickType="Single" DisplayName="Click 'Create'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e90041a9-48dc-49d2-8423-f4aa2408cdb6" Version="V3">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Categories/Create" DesignTimeRectangle="332, 484, 72, 38" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Create'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='btn btn-primary' aaname='Create' check:text='Create' /&gt;" Guid="3505e04f-c2b3-4f31-b799-88f2aaf08392" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEwAAAAqCAYAAAAZOr1sAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIMSURBVGhD7ZqxTsMwEIZ5DER5Kt6AAYkFHqIbL5IJdWZEVYeurBnK2E5UHdqlw9V/Eqe2e45zlQsquV/6hBTHR/LF5y6+IY0oKkwYT9jX9w89vE3p/mlCt4/vgwYO4AJO3LTCMICb7p4/aPTySaPX6bAxDuACTlxprTDYrGRxkwcMnMCNTSsMJnVlMRgncGPTCkPfshOUyo2NCuuBChOiwoSoMCEqTIgKE6LChKgwISpMyGWETda0aWq12a1pzN17ZWQXVqxQYUuFd31Bs114LT/jcn/xD5NV2G88cBdXJmxJpZlbzrkxF6w2ok25rP4i7ZywlVdLf2443sqpa3pxxaXqCsgnbL41M/u0nX25Pc0mzvXqpdxrzX3OyxUrt/7pOLvCetSVkFdYr3bgHxh736ZceNdSHyEUxAk7p24Xf7bC/JdoJLLxa9Y/Kk46hfWv25d8wk6Wfoy4sM79z+5DHS0YE5beV/uTT5j9msm9gRPWrJyOuVy7pYWl60rJKAzUv5ThQ9eSbAvwwuqWDlaDWVWlvS9sebvi3P/FbQupukIyC6s52WdMjoIiwkDzcsd07F9GVBFpQTvui3Rz3v4FLiLsP6PChKgwISpMiAoTosKEqDAhKkyIChPCCtPjThFix530QB1P9ECdHtkMMA7gAk7YI5sIBmATN6FvhwwcwIUrC/GEadJRYaIQHQB8sZKVP72YmwAAAABJRU5ErkJggg==" InformativeScreenshot="527e91482e64b25b9ace9ebe7b502fa3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create Category - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
                         </uix:NClick.Target>
@@ -249,39 +249,39 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NApplicationCard>
-              <uix:NCheckState DisplayName="Check App State 'Categories Category Name'" sap:VirtualizedContainerService.HintSize="1526,1167" sap2010:WorkflowViewState.IdRef="NCheckState_3" Version="V3">
+              <uix:NCheckState DisplayName="Check App State 'Categories Category Name'" sap:VirtualizedContainerService.HintSize="1526,1159" sap2010:WorkflowViewState.IdRef="NCheckState_3" Version="V3">
                 <uix:NCheckState.IfExists>
-                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="688,939" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="688,933" sap2010:WorkflowViewState.IdRef="Sequence_28">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="626,815" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_3">
+                    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="626,809" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_3">
                       <ueab:ExcelProcessScopeX.Body>
                         <ActivityAction x:TypeArguments="ui:IExcelProcess">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,719" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,713" sap2010:WorkflowViewState.IdRef="Sequence_27">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,597" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_7" ResizeWindow="None" UseTemplate="True" WorkbookPath="C:\Users\user-pc\Desktop\Connected Office Test Data.xlsx">
+                            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,591" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_7" ResizeWindow="None" UseTemplate="True" WorkbookPath="Connected Office Test Data.xlsx">
                               <ueab:ExcelApplicationCard.Body>
                                 <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                                   </ActivityAction.Argument>
-                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,292" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,290" sap2010:WorkflowViewState.IdRef="Sequence_26">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Test Results&quot;).Cell(&quot;B11&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,170" sap2010:WorkflowViewState.IdRef="WriteCellX_5" Value="[&quot;TRUE&quot;]" />
+                                    <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Test Results&quot;).Cell(&quot;B11&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,168" sap2010:WorkflowViewState.IdRef="WriteCellX_5" Value="[&quot;TRUE&quot;]" />
                                   </Sequence>
                                 </ActivityAction>
                               </ueab:ExcelApplicationCard.Body>
@@ -293,37 +293,37 @@
                   </Sequence>
                 </uix:NCheckState.IfExists>
                 <uix:NCheckState.IfNotExists>
-                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="688,916" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="688,910" sap2010:WorkflowViewState.IdRef="Sequence_31">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="626,792" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_4">
+                    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="626,786" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_4">
                       <ueab:ExcelProcessScopeX.Body>
                         <ActivityAction x:TypeArguments="ui:IExcelProcess">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,696" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,690" sap2010:WorkflowViewState.IdRef="Sequence_30">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,574" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_8" ResizeWindow="None" WorkbookPath="C:\Users\user-pc\Desktop\Connected Office Test Data.xlsx">
+                            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,568" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_8" ResizeWindow="None" WorkbookPath="Connected Office Test Data.xlsx">
                               <ueab:ExcelApplicationCard.Body>
                                 <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                                   </ActivityAction.Argument>
-                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,292" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,290" sap2010:WorkflowViewState.IdRef="Sequence_29">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Test Results&quot;).Cell(&quot;B11&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,170" sap2010:WorkflowViewState.IdRef="WriteCellX_6" Value="[&quot;FALSE&quot;]" />
+                                    <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Test Results&quot;).Cell(&quot;B11&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,168" sap2010:WorkflowViewState.IdRef="WriteCellX_6" Value="[&quot;FALSE&quot;]" />
                                   </Sequence>
                                 </ActivityAction>
                               </ueab:ExcelApplicationCard.Body>
@@ -344,52 +344,52 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NCheckState>
-              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Categories - Connected Office: Device Management" sap:VirtualizedContainerService.HintSize="1526,1518" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="ab2f41ff-d9c8-494d-93c9-edd4458c118a" Version="V2">
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Categories - Connected Office: Device Management" sap:VirtualizedContainerService.HintSize="1526,1509" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="ab2f41ff-d9c8-494d-93c9-edd4458c118a" Version="V2">
                 <uix:NApplicationCard.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1492,1291" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1492,1283" sap2010:WorkflowViewState.IdRef="Sequence_38">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NCheckState DisplayName="Check App State 'Category Details'" sap:VirtualizedContainerService.HintSize="1430,1167" sap2010:WorkflowViewState.IdRef="NCheckState_4" Version="V3">
+                      <uix:NCheckState DisplayName="Check App State 'Category Details'" sap:VirtualizedContainerService.HintSize="1430,1159" sap2010:WorkflowViewState.IdRef="NCheckState_4" Version="V3">
                         <uix:NCheckState.IfExists>
-                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="688,939" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="688,933" sap2010:WorkflowViewState.IdRef="Sequence_34">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="626,815" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_5">
+                            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="626,809" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_5">
                               <ueab:ExcelProcessScopeX.Body>
                                 <ActivityAction x:TypeArguments="ui:IExcelProcess">
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
                                   </ActivityAction.Argument>
-                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,719" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,713" sap2010:WorkflowViewState.IdRef="Sequence_33">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,597" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_9" ResizeWindow="None" UseTemplate="True" WorkbookPath="C:\Users\user-pc\Desktop\Connected Office Test Data.xlsx">
+                                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,591" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_9" ResizeWindow="None" UseTemplate="True" WorkbookPath="Connected Office Test Data.xlsx">
                                       <ueab:ExcelApplicationCard.Body>
                                         <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                                           <ActivityAction.Argument>
                                             <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                                           </ActivityAction.Argument>
-                                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,292" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,290" sap2010:WorkflowViewState.IdRef="Sequence_32">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Test Results&quot;).Cell(&quot;C11&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,170" sap2010:WorkflowViewState.IdRef="WriteCellX_7" Value="[&quot;TRUE&quot;]" />
+                                            <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Test Results&quot;).Cell(&quot;C11&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,168" sap2010:WorkflowViewState.IdRef="WriteCellX_7" Value="[&quot;TRUE&quot;]" />
                                           </Sequence>
                                         </ActivityAction>
                                       </ueab:ExcelApplicationCard.Body>
@@ -401,37 +401,37 @@
                           </Sequence>
                         </uix:NCheckState.IfExists>
                         <uix:NCheckState.IfNotExists>
-                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="688,916" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="688,910" sap2010:WorkflowViewState.IdRef="Sequence_37">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="626,792" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_6">
+                            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="626,786" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_6">
                               <ueab:ExcelProcessScopeX.Body>
                                 <ActivityAction x:TypeArguments="ui:IExcelProcess">
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
                                   </ActivityAction.Argument>
-                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,696" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,690" sap2010:WorkflowViewState.IdRef="Sequence_36">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,574" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_10" ResizeWindow="None" WorkbookPath="C:\Users\user-pc\Desktop\Connected Office Test Data.xlsx">
+                                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,568" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_10" ResizeWindow="None" WorkbookPath="Connected Office Test Data.xlsx">
                                       <ueab:ExcelApplicationCard.Body>
                                         <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                                           <ActivityAction.Argument>
                                             <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                                           </ActivityAction.Argument>
-                                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,292" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,290" sap2010:WorkflowViewState.IdRef="Sequence_35">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Test Results&quot;).Cell(&quot;C11&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,170" sap2010:WorkflowViewState.IdRef="WriteCellX_8" Value="[&quot;FALSE&quot;]" />
+                                            <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Test Results&quot;).Cell(&quot;C11&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,168" sap2010:WorkflowViewState.IdRef="WriteCellX_8" Value="[&quot;FALSE&quot;]" />
                                           </Sequence>
                                         </ActivityAction>
                                       </ueab:ExcelApplicationCard.Body>
@@ -465,10 +465,10 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NApplicationCard>
-              <Sequence DisplayName="Update" sap:VirtualizedContainerService.HintSize="1526,92" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <Sequence DisplayName="Update" sap:VirtualizedContainerService.HintSize="1526,2567" sap2010:WorkflowViewState.IdRef="Sequence_7">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
@@ -529,7 +529,7 @@
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,593" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" UseTemplate="True" WorkbookPath="C:\Users\user-pc\Desktop\Connected Office Test Data.xlsx">
+                              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,593" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" UseTemplate="True" WorkbookPath="Connected Office Test Data.xlsx">
                                 <ueab:ExcelApplicationCard.Body>
                                   <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                                     <ActivityAction.Argument>
@@ -555,7 +555,7 @@
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,593" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" UseTemplate="True" WorkbookPath="C:\Users\user-pc\Desktop\Connected Office Test Data.xlsx">
+                              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,593" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" UseTemplate="True" WorkbookPath="Connected Office Test Data.xlsx">
                                 <ueab:ExcelApplicationCard.Body>
                                   <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                                     <ActivityAction.Argument>
@@ -592,10 +592,10 @@
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NApplicationCard>
               </Sequence>
-              <Sequence DisplayName="Delete" sap:VirtualizedContainerService.HintSize="1526,92" sap2010:WorkflowViewState.IdRef="Sequence_13">
+              <Sequence DisplayName="Delete" sap:VirtualizedContainerService.HintSize="1526,2033" sap2010:WorkflowViewState.IdRef="Sequence_13">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
@@ -635,7 +635,7 @@
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,593" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" UseTemplate="True" WorkbookPath="C:\Users\user-pc\Desktop\Connected Office Test Data.xlsx">
+                              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,593" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" UseTemplate="True" WorkbookPath="Connected Office Test Data.xlsx">
                                 <ueab:ExcelApplicationCard.Body>
                                   <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                                     <ActivityAction.Argument>
@@ -661,7 +661,7 @@
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,593" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_4" ResizeWindow="None" UseTemplate="True" WorkbookPath="C:\Users\user-pc\Desktop\Connected Office Test Data.xlsx">
+                              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,593" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_4" ResizeWindow="None" UseTemplate="True" WorkbookPath="Connected Office Test Data.xlsx">
                                 <ueab:ExcelApplicationCard.Body>
                                   <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                                     <ActivityAction.Argument>
